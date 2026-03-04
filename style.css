@@ -1,0 +1,60 @@
+/* Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center page using Flexbox */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    margin: 25px 0;
+}
+
+/* Player choices layout */
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+/* Player images */
+.choices img {
+    width: 120px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect */
+.choices img:hover {
+    transform: scale(1.1);
+}
+
+/* Highlight selected */
+.selected {
+    border: 4px solid hotpink;
+}
+
+/* Computer image */
+#computer-image {
+    width: 150px;
+    margin-top: 15px;
+}
+
+/* Score button */
+button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}

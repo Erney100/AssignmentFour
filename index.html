@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+  Name: Jerney Whitaker
+  Date: 03.03.2026
+  CSC 372-01
+
+  This is the index.html page for my Rock Paper Scissors game.
+  It allows the user to select rock, paper, or scissors, generates
+  a random computer choice with a shuffle animation, determines
+  the winner, keeps track of wins, losses, and ties, and allows
+  the score to be reset.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Main Title of the Page -->
+    <h1>Rock Paper Scissors</h1>
+
+    <!-- ================= PLAYER SECTION ================= -->
+    <section id="player-section">
+        <h2>Your Throw</h2>
+
+        <!-- Container holding the player's choices -->
+        <div class="choices">
+            <!-- Each image has a data-choice value for JavaScript to read -->
+            <img src="images/rock.png" alt="Rock" data-choice="rock">
+            <img src="images/paper.png" alt="Paper" data-choice="paper">
+            <img src="images/scissors.png" alt="Scissors" data-choice="scissors">
+        </div>
+    </section>
+
+    <!-- ================= COMPUTER SECTION ================= -->
+    <section id="computer-section">
+        <h2>Computer Throw</h2>
+
+        <!-- This image changes when the computer makes a choice -->
+        <img id="computer-image" src="images/question-mark.png" alt="Computer Choice">
+    </section>
+
+    <!-- ================= OUTCOME SECTION ================= -->
+    <section id="outcome-section">
+        <h2>Outcome</h2>
+
+        <!-- JavaScript updates this text after each round -->
+        <p id="result">Make your move!</p>
+    </section>
+
+    <!-- ================= SCORE SECTION ================= -->
+    <section id="score-section">
+        <h2>Score</h2>
+
+        <!-- Score counters that JavaScript updates -->
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+        <p>Ties: <span id="ties">0</span></p>
+
+        <!-- Button to reset scores -->
+        <button id="reset-btn">Reset</button>
+    </section>
+
+</body>
+</html>
